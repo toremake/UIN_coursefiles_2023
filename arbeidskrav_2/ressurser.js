@@ -1,6 +1,7 @@
 const resources = [
     {
         category: "HTML",
+        text: "HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.",
         sources: [
             {
                 title: "W3Schools",
@@ -18,6 +19,7 @@ const resources = [
     },
     {
         category: "CSS",
+        text: "CSS står for Cascading StyleSheets, og brukes for å sette stilregler på HTML-elementer.",
         sources: [
             {
                 title: "W3Schools",
@@ -39,6 +41,7 @@ const resources = [
     },
     {
         category: "JavaScript",
+        text: "JavaScript er et scriptspråk basert på EcmaScript. JavaScript kjører direkte i nettleseren, og brukes ofte til å manipulere HTML og CSS i webgrensnesnitt.",
         sources: [
             {
                 title: "W3Schools",
@@ -56,6 +59,7 @@ const resources = [
     },
     {
         category: "React",
+        text: "React er et rammeverk bygget i JavaScript. React bruker komponenter og states for å lage en levende frontend.",
         sources: [
             {
                 title: "React documentation",
@@ -73,6 +77,7 @@ const resources = [
     },
     {
         category: "Sanity and headless CMS",
+        text: "Sanity er et headless CMS som står for innholdsadministrasjon. Innhold hentes inn i applikasjoner via GROQ-spørringer.",
         sources: [
             {
                 title: "Sanity documentation",

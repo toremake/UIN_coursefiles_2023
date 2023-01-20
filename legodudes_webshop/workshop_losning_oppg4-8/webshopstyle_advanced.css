@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+:root {
+    --red: #DA291C;
+    --yellow: #FFD700;
+    --blue: #006DB7;
+    --green: #00AF4D;
+    --white: #FFFFFF;
+    --black: #000000;
+    --maxwidth: 1200px;
+    --rootsize: 20px;
+}
+
+body {
+    background-color: var(--yellow);
+    background-image: url('images/mainbackground.png');
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--rootsize);
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.container {
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    background-color: var(--white);
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header a {
+    width: 100%;
+    max-width: 250px;
+}
+
+header a img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#cart {
+    position: relative;
+    width: 100%;
+    max-width: 50px;
+}
+#cart .label {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+    position: absolute;
+    top: -1.3rem;
+    left: -1.3rem;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-bottom: 5px solid var(--red);
+    display: inline-block;
+    text-transform: uppercase;
+    transition: ease-in-out .4s;
+}
+nav a:hover {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+nav a.active {
+    background-color: var(--yellow);
+    border-color: var(--black);
+    color: var(--black);
+}
+nav a.active:hover {
+    color: var(--red);
+}
+
+main, #product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+main h2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article.product-card {
+    background: var(--black);
+    border-bottom: 1rem solid var(--green);
+    width: 31%;
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+article.product-card > * {
+    display: block;
+    clear: both;
+}
+article.product-card img {
+    width: 100%;
+}
+article.product-card a {
+    color: var(--yellow);
+    padding: .5rem 0;
+    text-decoration: none;
+}
+article.product-card h3 {
+    margin: .2rem 0 .5rem 0;
+    text-transform: uppercase;
+}
+article.product-card button {
+    background: var(--green);
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+article.product-card button[disabled], 
+article.product-card button:disabled {
+    background-color: #ccc;
+}
+
+#cartview {
+    background: var(--black);
+    border-left: .5rem solid var(--green);
+    border-bottom: .5rem solid var(--green);
+    color: var(--white);
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    min-height: 100px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: ease-in-out .4s;
+}
+#cartview ul {
+    list-style-type: none;
+    padding: 0;
+}
+#cartview li {
+    width: 100%;
+    display: flex;
+    clear: both;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--green);
+    margin-bottom: .5rem;
+    transition: ease-in-out .7s;
+}
+#cartview span {
+    display: inline-block;
+    box-sizing: border-box;
+}
+#cartview .title {
+    width: calc(100% - 11rem);
+}
+#cartview .price {
+    width: 2rem;
+}
+#cartview .quantity {
+    display: flex;
+    margin: 0 .5rem;
+}
+#cartview .quantity button {
+    font-size: 1.5rem;
+}
+#cartview .quantity input {
+    width: 2rem;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+#cartview .delete {
+    width: 2rem;
+    height: 2rem;
+    background: var(--red);
+    border-radius: 50%;
+    color: var(--white);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}

@@ -7,3 +7,6 @@ Inneholder wireframes/skisser for hvordan arbeidskrav 2 skal se ut.
 
 ## arbeidskrav_3
 Inneholder ressurser.js, en datastruktur med kategoriserte ressurser som skal brukes for å lage et ressursarkiv med React.
+
+## legodudes_webshop
+Inneholder skisser, beskrivelser og løsningsforslag til introduksjonsukene med HTML, CSS og JavaScript.

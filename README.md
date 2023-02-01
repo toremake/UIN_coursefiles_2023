@@ -10,3 +10,6 @@ Inneholder ressurser.js, en datastruktur med kategoriserte ressurser som skal br
 
 ## legodudes_webshop
 Inneholder skisser, beskrivelser og løsningsforslag til introduksjonsukene med HTML, CSS og JavaScript.
+
+## react_product_card
+Inneholder kode fra forelesning, når man puller ned et react prosjekt må man installere node for å få prosjektet til å fungere 

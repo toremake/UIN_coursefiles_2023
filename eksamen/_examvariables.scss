@@ -1,0 +1,56 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Mulish:wght@400;700&display=swap');
+//Font variables
+$headerfont:    'Kanit', sans-serif;
+$textfont:      'Mulish', sans-serif;
+//Font classes
+.headerfont {
+    font-family: $headerfont;
+    font-weight: 700;
+}
+
+.textfont {
+    font-family: $textfont;
+    font-weight: 400;
+}
+.textfont-strong, .textfont-bold {
+    font-family: $textfont;
+    font-weight: 700;
+}
+body {
+    //pack out .textfont inside body for css rules:
+    @extend .textfont;
+    font-size: 18px;
+}
+
+//BOX-SIZING
+div, article, header, section, aside, span, footer, header {
+    box-sizing: border-box;
+}
+
+//ANIMATION TRANSITION RULES
+.transition {
+    transition: ease-in-out .4s;
+}
+
+a {
+    @extend .transition;
+}
+
+//COLORS
+$red:           #C00100;
+$orange:        #FFA100;
+$black:         #000000;
+$white:         #ffffff;
+$light-grey:    #f3f3f3;
+$dark-grey:     #232323;
+$green:         #6ea100;
+
+$warning: $orange;
+$success: $green;
+$error: $red;
+
+//SIZES
+$maxwidth:          1200px;
+$maxsentencelength: 60rem;
+$gaps:              1.5rem;

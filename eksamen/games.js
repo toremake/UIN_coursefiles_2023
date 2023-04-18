@@ -1,4 +1,4 @@
-const store = [
+export const store = [
     {
       title: "Counter-Strike: Global Offensive",
       id: 1,
@@ -6,7 +6,7 @@ const store = [
       genres: ["Action", "RPG"],
       link: "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1668125812",
-      fav: false
+ 
     },
     {
       title: "STAR WARS Jedi: Survivor™",
@@ -15,7 +15,7 @@ const store = [
       genres: ["Action", "Adventure"],
       link: "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1774580/header.jpg?t=1681406818",
-      fav: false
+    
     },
     {
       title: "Cyberpunk 2077",
@@ -24,7 +24,7 @@ const store = [
       genres: ["Cyberpunk", "RPG", "Action"],
       link: "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1680026109",
-      fav: false
+    
     },
     {
       title: "Hogwarts Legacy",
@@ -33,7 +33,7 @@ const store = [
       genres: ["Action", "Adventure", "RPG"],
       link: "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg?t=1680647016",
-      fav: true
+ 
     },
     {
       title: "STAR WARS™: The Old Republic™",
@@ -42,11 +42,10 @@ const store = [
       genres: ["MMORPG", "Action", "SCI-FI"],
       link: "https://store.steampowered.com/app/1286830/STAR_WARS_The_Old_Republic/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1286830/header.jpg?t=1680085446",
-      fav: true
     }
   ]
 
-  const mygames = [
+  export const mygames = [
     {
       title: "Grand Theft Auto V",
       id: 6,
